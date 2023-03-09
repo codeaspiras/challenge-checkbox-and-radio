@@ -1,0 +1,77 @@
+.form-nps {
+    margin-bottom: 20px;
+}
+
+.form-nps input {
+    display: none;
+}
+
+.form-nps label {
+    border-radius: 50%;
+    background: lightgray;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+.form-nps label:hover {
+    background: wheat;
+    color: black;
+}
+
+.form-nps input:checked + label,
+.form-nps[data-value="2"] #grau_1 + label,
+.form-nps[data-value="3"] #grau_1 + label,
+.form-nps[data-value="3"] #grau_2 + label,
+.form-nps[data-value="4"] #grau_1 + label,
+.form-nps[data-value="4"] #grau_2 + label,
+.form-nps[data-value="4"] #grau_3 + label,
+.form-nps[data-value="5"] #grau_1 + label,
+.form-nps[data-value="5"] #grau_2 + label,
+.form-nps[data-value="5"] #grau_3 + label,
+.form-nps[data-value="5"] #grau_4 + label {
+    background: gray;
+    color: white;
+}
+
+.form-nps input:checked + label:hover,
+.form-nps[data-value="2"] #grau_1 + label:hover,
+.form-nps[data-value="3"] #grau_1 + label:hover,
+.form-nps[data-value="3"] #grau_2 + label:hover,
+.form-nps[data-value="4"] #grau_1 + label:hover,
+.form-nps[data-value="4"] #grau_2 + label:hover,
+.form-nps[data-value="4"] #grau_3 + label:hover,
+.form-nps[data-value="5"] #grau_1 + label:hover,
+.form-nps[data-value="5"] #grau_2 + label:hover,
+.form-nps[data-value="5"] #grau_3 + label:hover,
+.form-nps[data-value="5"] #grau_4 + label:hover {
+    background: rgb(207, 180, 130);
+    color: black;
+}
+
+.form-nps > div {
+    display: inline-block;
+}
+
+
+.like input {
+    display: none;
+}
+
+.like-js button,
+.like .desmarcado {
+    color: gray;
+}
+
+.like-js.true button[data-value=true],
+.like-js.false button[data-value=false],
+.like .marcado {
+    color: red;
+}
+
+.like input:not(:checked) + label .marcado {
+    display: none;
+}
+
+.like input:checked + label .desmarcado {
+    display: none;
+}

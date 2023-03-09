@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <title>&lt;codeAspiras&dash;&gt;</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <form method="post" action="https://codeaspiras.free.beeceptor.com">
+            <h4>Sentença do juiz (radio)</h4>
+            <div>
+                <input type="radio" id="culpado" name="sentenca" value="culpado" />
+                <label for="culpado">Culpado</label>
+            </div>
+            <div>
+                <input type="radio" id="inocente" name="sentenca" value="inocente" />
+                <label for="inocente">Inocente</label>
+            </div>
+
+            <h4>Lista da feira (checkbox)</h4>
+            <div>
+                <input type="checkbox" id="batata" name="item" value="batata" />
+                <label for="batata">Batata</label>
+            </div>
+            <div>
+                <input type="checkbox" id="macaxeira" name="item" value="macaxeira" />
+                <label for="macaxeira">Macaxeira</label>
+            </div>
+            <div>
+                <input type="checkbox" id="mamao" name="item" value="mamao" />
+                <label for="mamao">Mamão</label>
+            </div>
+            <div>
+                <input type="checkbox" id="uva" name="item" value="uva" />
+                <label for="uva">Uva</label>
+            </div>
+            <div>
+                <input type="checkbox" id="banana" name="item" value="banana" />
+                <label for="banana">Banana</label>
+            </div>
+
+            <h4>Grau de Satisfação (radio)</h4>
+            <div class="form-nps">
+                <div>
+                    <input type="radio" id="grau_1" name="satisfacao" value="1" />
+                    <label for="grau_1">1</label>
+                </div>
+                <div>
+                    <input type="radio" id="grau_2" name="satisfacao" value="2" />
+                    <label for="grau_2">2</label>
+                </div>
+                <div>
+                    <input type="radio" id="grau_3" name="satisfacao" value="3" />
+                    <label for="grau_3">3</label>
+                </div>
+                <div>
+                    <input type="radio" id="grau_4" name="satisfacao" value="4" />
+                    <label for="grau_4">4</label>
+                </div>
+                <div>
+                    <input type="radio" id="grau_5" name="satisfacao" value="5" />
+                    <label for="grau_5">5</label>
+                </div>
+            </div>
+
+            <h4>Curtir (checkbox)</h4>
+
+            <div class="like">
+                <input type="checkbox" id="like" name="like" value="true" />
+                <label for="like">
+                    <span class="desmarcado">Curtir</span>
+                    <span class="marcado">Descurtir</span>
+                </label>
+            </div>
+
+            <h4>Curtir (javascript)</h4>
+
+            <div class="like-js">
+                <button type="button" class="like-js-btn" data-value="true">Gostei</button>
+                <button type="button" class="like-js-btn" data-value="false">Não gostei</button>
+            </div>
+
+            <div>
+                <button type="submit">Enviar</button>
+            </div>
+
+            <script type="text/javascript" src="main.js"></script>
+        </form>
+    </body>
+</html>
